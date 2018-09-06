@@ -32,7 +32,7 @@ import DocsPageBuilder from '../../components/DocsPageBuilder';
 import IntroBlurb from '../../components/IntroBlurb';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 
-import STYLES from './InfiniteScrollPage.scss';
+import STYLES from './InfiniteScrollPage.css';
 
 const getClassName = cssModules(STYLES);
 

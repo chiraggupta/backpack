@@ -33,7 +33,7 @@ import HeroSection from '../HeroSection';
 import Heading from '../Heading';
 import AlternatingPageContent from '../AlternatingPageContent';
 
-import STYLES from './InfoPageBuilder.scss';
+import STYLES from './InfoPageBuilder.css';
 
 const getClassName = cssModules(STYLES);
 const renderer = new marked.Renderer();

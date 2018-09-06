@@ -22,7 +22,7 @@ import { cssModules } from 'bpk-react-utils';
 
 import Heading from '../Heading';
 
-import STYLES from './IconSearchResults.scss';
+import STYLES from './IconSearchResults.css';
 import customPropTypes from './propTypes';
 import IconSearchResult from './IconSearchResult';
 

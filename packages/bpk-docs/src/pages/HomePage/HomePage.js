@@ -41,7 +41,7 @@ import HongKongHeroImage from '../../static/hongKong_hero.jpg';
 import DohaHeroImage from '../../static/doha_hero.jpg';
 
 import UpdatedAt from './UpdatedAt';
-import STYLES from './home-page.scss';
+import STYLES from './home-page.css';
 
 const getClassName = cssModules(STYLES);
 

@@ -42,7 +42,7 @@ import DocsPageBuilder from '../../components/DocsPageBuilder';
 import Paragraph from '../../components/Paragraph';
 import Code from '../../components/Code';
 
-import STYLES from './buttons-page.scss';
+import STYLES from './buttons-page.css';
 
 const AlignedBpkSmallArrowIcon = alignToButton(TestBpkSmallArrowIcon);
 const AlignedBpkLargeArrowIcon = alignToLargeButton(TestBpkLargeArrowIcon);

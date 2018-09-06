@@ -27,7 +27,7 @@ import chipReadme from 'bpk-component-chip/README.md';
 import Paragraph from '../../components/Paragraph';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 
-import STYLES from './ChipsPage.scss';
+import STYLES from './ChipsPage.css';
 
 const getClassName = cssModules(STYLES);
 

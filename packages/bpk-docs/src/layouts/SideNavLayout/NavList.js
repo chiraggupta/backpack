@@ -26,7 +26,7 @@ import { withRtlSupport } from 'bpk-component-icon';
 import { setPlatformInLocalStorage } from '../../helpers/storage-helper';
 
 import NavListFilter, { type Option as FilterOption } from './NavListFilter';
-import STYLES from './NavList.scss';
+import STYLES from './NavList.css';
 import sortLinks from './links-sorter';
 import {
   type LinkPropType,

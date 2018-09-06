@@ -42,7 +42,7 @@ import BpkParagraph from '../../components/Paragraph';
 import IntroBlurb from '../../components/IntroBlurb';
 
 import InputContainer from './InputContainer';
-import STYLES from './forms-page.scss';
+import STYLES from './forms-page.css';
 import RadioContainer from './RadioContainer';
 
 const getClassName = cssModules(STYLES);

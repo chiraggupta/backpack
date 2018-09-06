@@ -25,7 +25,7 @@ import ArrowDownIcon from 'bpk-component-icon/sm/arrow-down';
 
 import { LatLongPropType, type LatLong } from './common-types';
 import BpkBasicMapMarker from './BpkBasicMapMarker';
-import STYLES from './BpkMapMarker.scss';
+import STYLES from './BpkMapMarker.css';
 
 const getClassName = cssModules(STYLES);
 

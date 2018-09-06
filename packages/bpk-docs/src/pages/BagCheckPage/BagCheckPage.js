@@ -23,7 +23,7 @@ import BpkLink from 'bpk-component-link';
 import BpkText from 'bpk-component-text';
 import { cssModules } from 'bpk-react-utils';
 
-import STYLES from './bag-check-page.scss';
+import STYLES from './bag-check-page.css';
 
 /* eslint-disable */
 // $FlowFixMe

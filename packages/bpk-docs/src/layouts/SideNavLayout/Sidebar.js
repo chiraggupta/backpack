@@ -27,7 +27,7 @@ import BpkBreakpoint, { BREAKPOINTS } from 'bpk-component-breakpoint';
 import BackpackLogoWhite from '../../static/backpack-logo-white.svg';
 
 import NavList from './NavList';
-import STYLES from './Sidebar.scss';
+import STYLES from './Sidebar.css';
 import SectionsList from './SectionsList';
 import { type Category } from './common-types';
 

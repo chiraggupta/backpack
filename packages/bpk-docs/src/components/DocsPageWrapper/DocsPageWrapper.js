@@ -32,7 +32,7 @@ import {
 import Heading from '../Heading';
 
 import Blurb from './Blurb';
-import STYLES from './DocsPageWrapper.scss';
+import STYLES from './DocsPageWrapper.css';
 
 const getClassName = cssModules(STYLES);
 

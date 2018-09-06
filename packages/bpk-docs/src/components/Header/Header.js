@@ -29,7 +29,7 @@ import BpkLink from 'bpk-component-link';
 
 import * as ROUTES from '../../constants/routes';
 
-import STYLES from './Header.scss';
+import STYLES from './Header.css';
 import HamburgerButton from './HamburgerButton';
 
 const getClassName = cssModules(STYLES);

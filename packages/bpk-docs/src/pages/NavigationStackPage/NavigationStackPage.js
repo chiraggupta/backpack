@@ -33,7 +33,7 @@ import {
   StatefulNavigationStack,
   SimplePage,
 } from './page-components';
-import STYLES from './NavigationStackPage.scss';
+import STYLES from './NavigationStackPage.css';
 
 const getClassName = cssModules(STYLES);
 

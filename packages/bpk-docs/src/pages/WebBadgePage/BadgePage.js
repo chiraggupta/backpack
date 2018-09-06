@@ -27,7 +27,7 @@ import badgeReadme from 'bpk-component-badge/README.md';
 import DocsPageBuilder from '../../components/DocsPageBuilder';
 import Paragraph from '../../components/Paragraph';
 
-import STYLES from './badge-page.scss';
+import STYLES from './badge-page.css';
 
 const getClassName = cssModules(STYLES);
 const badgeClassName = getClassName('bpkdocs-badge-page__badge-spacing');

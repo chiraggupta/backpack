@@ -35,7 +35,7 @@ import DocsPageBuilder from '../../components/DocsPageBuilder';
 import DocsPageWrapper from '../../components/DocsPageWrapper';
 import IntroBlurb from '../../components/IntroBlurb';
 
-import STYLES from './fieldsets-page.scss';
+import STYLES from './fieldsets-page.css';
 
 const getClassName = cssModules(STYLES);
 

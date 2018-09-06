@@ -22,7 +22,7 @@ import BpkCard from 'bpk-component-card';
 import BpkText from 'bpk-component-text';
 import { cssModules } from 'bpk-react-utils';
 
-import STYLES from './HomePageCard.scss';
+import STYLES from './HomePageCard.css';
 
 const getClassName = cssModules(STYLES);
 

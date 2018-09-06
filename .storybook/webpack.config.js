@@ -1,18 +1,32 @@
-const fs = require('fs');
-const path = require('path');
+/*
+ * Backpack - Skyscanner's Design System
+ *
+ * Copyright 2018 Skyscanner Ltd
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
-const sassFunctions = require('./../packages/bpk-mixins/sass-functions');
 const postCssPlugins = require('./../scripts/webpack/postCssPlugins');
 
-const { BPK_TOKENS, ENABLE_CSS_MODULES } = process.env;
-const rootDir = path.resolve(__dirname, '../');
+const { ENABLE_CSS_MODULES } = process.env;
 const useCssModules = ENABLE_CSS_MODULES !== 'false';
 
 module.exports = {
   module: {
     rules: [
       {
-        test: /\.scss$/,
+        test: /\.css$/,
+        exclude: /base\.scss$/,
         use: [
           {
             loader: 'style-loader',
@@ -29,20 +43,6 @@ module.exports = {
             loader: 'postcss-loader',
             options: {
               plugins: postCssPlugins,
-            },
-          },
-          {
-            loader: 'sass-loader',
-            options: {
-              data: BPK_TOKENS
-                ? fs.readFileSync(
-                    path.join(
-                      rootDir,
-                      `packages/bpk-tokens/tokens/${BPK_TOKENS}.scss`,
-                    ),
-                  )
-                : '',
-              functions: sassFunctions,
             },
           },
         ],

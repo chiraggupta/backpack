@@ -16,7 +16,6 @@
  * limitations under the License.
  */
 
-import fs from 'fs';
 import path from 'path';
 
 import webpack from 'webpack';
@@ -33,7 +32,6 @@ import redirects from './packages/bpk-docs/src/constants/redirect-routes';
 
 const {
   NODE_ENV,
-  BPK_TOKENS,
   ENABLE_CSS_MODULES,
   BPK_BUILT_AT,
   GOOGLE_MAPS_API_KEY,
@@ -49,9 +47,6 @@ const staticSiteGeneratorConfig = {
 };
 
 const sassOptions = {
-  data: BPK_TOKENS
-    ? fs.readFileSync(`packages/bpk-tokens/tokens/${BPK_TOKENS}.scss`)
-    : '',
   functions: sassFunctions,
 };
 
@@ -74,7 +69,7 @@ const config = {
         exclude: /node_modules\/(?!bpk-).*/,
       },
       {
-        test: /base\.scss$/,
+        test: /base\.css$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: [
@@ -93,8 +88,8 @@ const config = {
         }),
       },
       {
-        test: /\.scss$/,
-        exclude: /base\.scss$/,
+        test: /\.css$/,
+        exclude: /base\.css$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: [
@@ -105,31 +100,6 @@ const config = {
                 minimize: true,
                 modules: useCssModules,
                 localIdentName: '[local]-[hash:base64:5]',
-              },
-            },
-            {
-              loader: 'postcss-loader',
-              options: {
-                plugins: postCssPlugins,
-              },
-            },
-            {
-              loader: 'sass-loader',
-              options: sassOptions,
-            },
-          ],
-        }),
-      },
-      {
-        test: /\.css$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [
-            {
-              loader: 'css-loader',
-              options: {
-                importLoaders: 1,
-                minimize: true,
               },
             },
             {
